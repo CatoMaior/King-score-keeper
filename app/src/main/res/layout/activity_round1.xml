@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firpo.pietro.kingscorekeeper.Round1"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/Round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prima mano"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/WhatToTake"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="6dp"
+        android:text="No Re e fanti\n(Meno 2 punti ogni presa)"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Round"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/Player1Label"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:text="Player 1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Player2Label"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player1Label" />
+
+    <TextView
+        android:id="@+id/Player3Label"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player2Label" />
+
+    <TextView
+        android:id="@+id/Player4Label"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player3Label" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="Indietro"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/ForwardButton"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:enabled="false"
+        android:text="Avanti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <SeekBar
+        android:id="@+id/Player1SeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="120dp"
+        android:max="8"
+        android:progress="0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/Player1Label"
+        app:layout_constraintRight_toLeftOf="@+id/Player1Num"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/Player2SeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="16dp"
+        android:max="8"
+        android:progress="0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/Player2Label"
+        app:layout_constraintRight_toLeftOf="@+id/Player2Num"
+        app:layout_constraintTop_toBottomOf="@+id/Player1SeekBar" />
+
+    <SeekBar
+        android:id="@+id/Player3SeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="16dp"
+        android:max="8"
+        android:progress="0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/Player3Label"
+        app:layout_constraintRight_toLeftOf="@+id/Player3Num"
+        app:layout_constraintTop_toBottomOf="@+id/Player2SeekBar" />
+
+    <SeekBar
+        android:id="@+id/Player4SeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="16dp"
+        android:max="8"
+        android:progress="0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/Player4Label"
+        app:layout_constraintRight_toLeftOf="@+id/Player4Num"
+        app:layout_constraintTop_toBottomOf="@+id/Player3SeekBar" />
+
+    <TextView
+        android:id="@+id/Player1Num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="120dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/Player2Num"
+        app:layout_constraintRight_toRightOf="@+id/Player2Num"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/Player2Num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/Player3Num"
+        app:layout_constraintRight_toRightOf="@+id/Player3Num"
+        app:layout_constraintTop_toBottomOf="@+id/Player1Num"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/Player3Num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/Player4Num"
+        app:layout_constraintRight_toRightOf="@+id/Player4Num"
+        app:layout_constraintTop_toBottomOf="@+id/Player2Num"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/Player4Num"
+        android:layout_width="8dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player3Num"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Classifica"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="268dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+    <TextView
+        android:id="@+id/FirstPlayerName"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="307dp"
+        android:text="FirstPlayer"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/SecondPlayerName"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="24dp"
+        android:text="SecondPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/FirstPlayerName"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/ThirdPlayerName"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="24dp"
+        android:text="ThirdPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/SecondPlayerName"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/FourthPlayerName"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="24dp"
+        android:text="FourthPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/ThirdPlayerName"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/FirstPlayerPoints"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginTop="307dp"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/SecondPlayerPoints"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/FirstPlayerPoints"
+        app:layout_constraintTop_toBottomOf="@+id/FirstPlayerPoints"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/ThirdPlayerPoints"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/SecondPlayerPoints"
+        app:layout_constraintTop_toBottomOf="@+id/SecondPlayerPoints"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/FourthPlayerPoints"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@+id/ThirdPlayerPoints"
+        app:layout_constraintTop_toBottomOf="@+id/ThirdPlayerPoints"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1008666834894",
+    "firebase_url": "https://king-score-keeper.firebaseio.com",
+    "project_id": "king-score-keeper",
+    "storage_bucket": "king-score-keeper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008666834894:android:f1a1c2fa36629392",
+        "android_client_info": {
+          "package_name": "firpo.pietro.kingscorekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008666834894-hfpgn3ir0rknggq7se9187ntm3li215n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASKZcTQPDP_y_4AUiINeCCMKjjvVFGauA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
